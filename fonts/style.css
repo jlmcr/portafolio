@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('icomoon.eot?pi6klo');
+    src: url('icomoon.eot?pi6klo#iefix') format('embedded-opentype'), url('icomoon.ttf?pi6klo') format('truetype'), url('icomoon.woff?pi6klo') format('woff'), url('icomoon.svg?pi6klo#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+    content: "\e900";
+}
+
+.icon-phone:before {
+    content: "\e942";
+}
+
+.icon-display:before {
+    content: "\e956";
+}
+
+.icon-stats-dots:before {
+    content: "\e99b";
+}
+
+.icon-list:before {
+    content: "\e9ba";
+}
+
+.icon-facebook2:before {
+    content: "\ea91";
+}
+
+.icon-whatsapp:before {
+    content: "\ea93";
+}
+
+.icon-youtube:before {
+    content: "\ea9d";
+}
+
+.icon-youtube2:before {
+    content: "\ea9e";
+}
