@@ -1,0 +1,368 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ----------------------
+gif de fondo
+---------------------- */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /*--------------PAGINA GRADIENTS------------*/
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, hsla(198, 39%, 28%, 0.775), hsla(195, 35%, 19%, 0.721), hsla(198, 43%, 11%, 0.687)), url(../videos/Iphone-2967.gif);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, hsla(197, 38%, 28%, 0.755), hsla(194, 35%, 19%, 0.721), hsla(198, 43%, 11%, 0.687)), url(../videos/Iphone-2967.gif);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*--------------PAGINA GRADIENTS------------*/
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    /*    background-attachment: fixed;   FIJA LA IMAGEN*/
+}
+
+
+/* ----------------------
+navegador links
+---------------------- */
+
+header {
+    text-align: right;
+}
+
+nav {
+    /*acomodamos los links en la parte derecha*/
+    background-color: hsla(206, 14%, 10%, 0.574);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    /*fijamos el menu*/
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav>a {
+    color: #999;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1.7rem;
+}
+
+nav {
+    color: #999;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 0 20px 0;
+    font-size: 1.7rem;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+
+/* ----------------------
+PRESENTACION
+---------------------- */
+
+div.presentacion {
+    /* position: absolute;   POSICIONAMOS ENCIMA DE ALGO
+*/
+    z-index: 100;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    color: tomato;
+    font-size: 2rem;
+    text-align: center;
+}
+
+div.presentacion-texto {
+    padding-top: 20vh;
+}
+
+#texto1 {
+    color: white;
+    padding: 30px;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+
+/* ----------------------
+PORTAFOLIO
+---------------------- */
+
+.titulo-seccion {
+    padding: 50px 0 0 0;
+}
+
+.portafolio-titulo {
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+}
+
+
+/* ----------------------
+FIN PORTAFOLIO
+---------------------- */
+
+
+/* ----------------------
+TECNOLOGIAS
+---------------------- */
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+}
+
+.contenedor-tecnologias {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 70px 0;
+}
+
+.tecnologia1 {
+    width: 350px;
+    padding: 0 50px;
+}
+
+.tecnologia2 {
+    width: 350px;
+    padding: 50px;
+}
+
+
+/* ----------------------
+FIN TECNOLOGIAS
+---------------------- */
+
+
+/* ----------------------
+ARTICULOS
+---------------------- */
+
+
+/*animacion link ver e imagen*/
+
+.contenedor-articulos {
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+    /*justificar-contenido: espacio alrededor;*/
+    flex-wrap: wrap;
+    /*envoltura flexible: envoltura;*/
+}
+
+.articulo {
+    display: flex;
+    flex-direction: row;
+    padding: 50PX 0 70px 0;
+}
+
+.contenedor-articulos .imagen {
+    width: 100%;
+    position: relative;
+    margin: 0 10px 10px 0;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+
+/* .img-largo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+ */
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #0008148e;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+}
+
+
+/*fin animacion link ver e imagen*/
+
+.articulo .texto h1 {
+    padding: 20px;
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+}
+
+.articulo .texto p {
+    text-align: justify;
+    padding: 0 30px;
+    color: white;
+    font-size: 1.9em;
+    font-family: 'Dancing Script', cursive;
+}
+
+.articulo a {
+    text-decoration: none;
+}
+
+
+/* ----------------------
+FIN ARTICULOS
+---------------------- */
+
+
+/* ----------------------
+FOOTER 
+---------------------- */
+
+.footer-enlaces {
+    background-color: #161a1d;
+    color: #d8f3dc;
+    width: 100%;
+    height: 100vh;
+    /*centramos verticalmente la tabla dentro de este*/
+    display: flex;
+    align-items: center;
+}
+
+.footer-enlaces table {
+    background-color: #161a1d;
+    color: #d8f3dc;
+    width: 80%;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.footer-enlaces table td {
+    text-align: center;
+    padding: 15px;
+}
+
+.footer-enlaces table a {
+    color: #d8f3dc;
+    text-decoration: none;
+}
+
+.footer-enlaces table li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.footer-enlaces table a:hover {
+    color: #7e8991;
+}
+
+.footer {
+    background: #161a1d;
+    color: #d8f3dc;
+    padding: 20px 0 0 0;
+    text-align: center;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+
+/* ----------------------
+FIN FOOTER 
+---------------------- */
+
+.espacio {
+    width: 100%;
+    height: 300px;
+}
+
+@media screen and (max-width:980px) {
+    /*flex de cada articulo  texto e imagen en columna*/
+    .articulo {
+        flex-direction: column;
+        padding: 50PX 0 70px 0;
+    }
+    /*para que no se apeguen*/
+    .articulo .texto p {
+        text-align: justify;
+        padding: 0 0 30px 0;
+        font-size: 1.5rem;
+    }
+    /*para que las imagene no sean grandes*/
+    .imagen img {
+        width: 100%;
+        height: 100%;
+        max-height: 300px;
+        object-fit: cover;
+    }
+    /* cambio de tipo de fuente por el tamaño */
+    .articulo .texto p {
+        font-size: 1.5rem;
+        /* font-family: 'Dancing Script', cursive; */
+        font-family: 'Open Sans', sans-serif;
+    }
+    /*texto de bienvvenida*/
+    #texto1 {
+        color: white;
+        padding: 30px;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width:483px) {
+    /*texto de bienvvenida*/
+    #texto1 {
+        color: white;
+        padding: 30px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    /*imagenes de tecnologia*/
+    .tecnologia1 {
+        width: 200px;
+        padding: 0 0 30px 0;
+    }
+    .tecnologia2 {
+        width: 200px;
+        padding: 0 0 30px 0;
+    }
+    /*tamaño de la fuente del nav*/
+    nav a {
+        font-size: 1rem;
+    }
+    nav {
+        font-size: 1rem;
+    }
+}
